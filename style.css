@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: Outfit;
+}
+
+.card{
+    border-radius: 14px;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    padding: 15px;
+    background: hsl(216, 50%, 16%);
+    flex-direction: column;
+    box-shadow: #040f1f 0px 20px 35px;
+}
+
+#ethereum{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 14px;
+}
+
+.equilibrium{
+    position: relative;
+}
+
+.equilibrium:hover .ethereum{
+    opacity: 0.3;
+}
+
+.equilibrium:hover .middle{
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.view{
+    background-color: hsla(178, 100%, 50%, 0.527);
+    color: white;
+    font-size: 16px;
+    padding: 108px 108px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.text{
+    padding-top: 5px;
+}
+
+h1 {
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+svg{
+    margin-right: 7px;
+}
+
+.price-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ethereum{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: flex;
+	align-items: center;
+}
+
+.clock{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.line{
+    width:100%;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin: 10px 0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+
+#avatar{
+    width: 15%;
+    height: 15%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.text-avatar{
+    padding-left: 15px;
+}
